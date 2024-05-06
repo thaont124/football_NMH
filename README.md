@@ -135,17 +135,3 @@ INSERT INTO football.referee (referee_name, dob, hometown, year_experience, stat
 ('Nguyễn Văn T', '1992-03-10', 'Lạng Sơn', 8, 1, 'REF032'),
 ('Lê Thanh U', '1983-12-18', 'Quảng Bình', 15, 1, 'REF033');
 
--- Tạo dữ liệu cho bảng GameReferee
--- Giả sử mỗi trận đấu có 4 trọng tài: 1 trọng tài chính, 2 trọng tài biên, 1 trọng tài ngoài sân
-INSERT INTO football.game_referee (game_id, referee_id, referee_position) VALUES
-(1, 1, 'main'), (1, 2, 'lineman'), (1, 3, 'lineman'), (1, 4, 'other'),
-(2, 5, 'main'), (2, 6, 'lineman'), (2, 7, 'lineman'), (2, 8, 'other'),
-(3, 9, 'main'), (3, 10, 'lineman'), (3, 11, 'lineman'), (3, 12, 'other'),
-(4, 1, 'main'), (4, 2, 'lineman'), (4, 3, 'lineman'), (4, 4, 'other'),
-(5, 5, 'main'), (5, 6, 'lineman'), (5, 7, 'lineman'), (5, 8, 'other'),
-(6, 9, 'main'), (6, 10, 'lineman'), (6, 11, 'lineman'), (6, 12, 'other'),
-(7, 1, 'main'), (7, 2, 'lineman'), (7, 3, 'lineman'), (7, 4, 'other'),
-(8, 5, 'main'), (8, 6, 'lineman'), (8, 7, 'lineman'), (8, 8, 'other'),
-(9, 9, 'main'), (9, 10, 'lineman'), (9, 11, 'lineman'), (9, 12, 'other'),
-(10, 1, 'main'), (10, 2, 'lineman'), (10, 3, 'lineman'), (10, 4, 'other');
--- Tiếp tục thêm dữ liệu cho các trận đấu còn lại trong mỗi vòng
